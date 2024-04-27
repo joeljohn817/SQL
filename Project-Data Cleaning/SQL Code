@@ -177,10 +177,9 @@ Where row_num > 1
 -- Delete Unused Columns
 
 Select *
-from NashvilleHousing
+From PortfolioProject.dbo.NashvilleHousing
 
-Alter Table NashvilleHousing
-Drop Column OwnerAddress,TaxDistrict,PropertyAddress
 
-Alter Table NashvilleHousing
-Drop Column SaleDate
+ALTER TABLE PortfolioProject.dbo.NashvilleHousing
+DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress, SaleDate
+
